@@ -175,7 +175,9 @@ h2.suit-title {
   margin-right: auto;
   bottom: 0;
   padding: 0.4rem;
-  transform: translateX(75%) translateY(10%);
+  right: 0;
+  left: 0;
+  width: 5rem;
   color: #fff;
   background-color: #000;
 }
