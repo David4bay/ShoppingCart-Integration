@@ -29,6 +29,10 @@ ul.nav-container {
   box-shadow: -15px 0px 15px 0px;
 }
 
+ul.nav-container:hover {
+  box-shadow: -15px 0px 15px 0px hsl(300deg, 100%, 50%);
+}
+
 ol.menu-container {
   display: flex;
   flex-direction: row;
@@ -40,6 +44,11 @@ li {
   list-style: none;
 }
 
+li:hover {
+  color: hsl(300deg, 100%, 50%);
+  cursor: pointer;
+}
+
 section.products {
   display: flex;
   flex-direction: column;
@@ -49,7 +58,7 @@ section.products {
   margin: auto;
 }
 
-h1.test-cart-function {
+h1.test-cart-title {
   display: block;
   width: 100%;
   text-align: center;
@@ -60,6 +69,11 @@ h1.test-cart-function {
   letter-spacing: 5px;
 }
 
+span.highlight:hover {
+  color: hsl(300deg, 100%, 50%);
+  cursor: pointer;
+}
+
 div.card-container {
   display: flex;
   flex-direction: row;
@@ -67,7 +81,7 @@ div.card-container {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 div.cards {
@@ -85,7 +99,7 @@ div.cards {
 }
 
 div.cards:hover {
-  box-shadow: 0px 0px 15px 4px hsl(0deg, 0%, 100%);
+  box-shadow: 0px 0px 15px 5px hsl(0deg, 0%, 100%);
   transform: scale(1.1);
 }
 
@@ -122,6 +136,12 @@ span.price {
   transform: translate(40%, -15%) rotate(-25deg);
 }
 
+span.price:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 0%);
+}
+
 div.cards:hover span.price {
   box-shadow: 0px 0px 15px 4px hsl(0deg, 0%, 100%);
 }
@@ -146,7 +166,7 @@ figure {
   position: relative;
 }
 
-h2.title {
+h2.suit-title {
   font-size: 0.9rem;
   position: absolute;
   bottom: 0;
@@ -173,7 +193,7 @@ button.checkout {
   width: 100px;
   border-radius: 0.4rem;
   padding: 0.1rem;
-  background-color: none;
+  border: 1px solid #000;
 }
 
 footer {
@@ -188,4 +208,9 @@ footer {
   position: absolute;
   bottom: 0;
   box-shadow: 5px 0px 15px 0px #fff;
+}
+
+footer:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5px hsl(300deg, 100%, 50%);
 }/*# sourceMappingURL=styles.css.map */
