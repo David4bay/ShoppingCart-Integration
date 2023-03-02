@@ -16,6 +16,8 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 ul.nav-container {
@@ -81,7 +83,7 @@ div.card-container {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 div.cards {
@@ -206,7 +208,6 @@ footer {
   font-size: 20px;
   font-weight: 300;
   position: absolute;
-  bottom: 0;
   box-shadow: 5px 0px 15px 0px #fff;
 }
 
