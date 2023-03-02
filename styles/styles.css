@@ -22,6 +22,7 @@ ul.nav-container {
   display: flex;
   flex-direction: row;
   color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 0%);
   padding: 1rem;
   border-bottom: 1px solid black;
 }
@@ -34,11 +35,6 @@ ol.menu-container {
 
 li {
   list-style: none;
-}
-
-li:last-child {
-  display: flex;
-  justify-self: flex-end;
 }
 
 section.products {
@@ -64,7 +60,7 @@ div.card-container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1.2rem;
   padding: 2rem;
   padding-top: 8rem;
 }
@@ -78,10 +74,15 @@ div.cards {
   font-size: 0.8rem;
   border-radius: 0.9rem;
   box-shadow: 0px 0px 1px 0px;
+  transition: all 0.4s;
 }
 
 div.cards:hover {
-  filter: drop-shadow(#fff);
+  box-shadow: 0px 0px 1rem hsl(0deg, 0%, 100%);
+}
+
+div.cards:hover > div.cards:not(div.cards:hover) {
+  scale: 0.4;
 }
 
 figure, button:hover {
