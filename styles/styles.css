@@ -195,12 +195,17 @@ div.snipcart-layout__content {
 }
 
 footer.snipcart-cart__footer-buttons, button.snipcart-featured-payment-methods {
-  display: block;
+  display: inline-block;
   width: 50%;
+}
+
+div.snipcart-cart-summary-side div.snipcart-cart__footer {
+  position: relative;
+}
+
+div.snipcart-cart__footer {
   position: absolute;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
+  bottom: 50%;
 }
 
 img.product-img {
