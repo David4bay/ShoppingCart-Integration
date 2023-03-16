@@ -247,9 +247,9 @@ footer:hover {
 
 footer a {
   color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
 }
 
 footer:hover a {
   color: hsl(300deg, 100%, 50%);
-  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
