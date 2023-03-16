@@ -250,6 +250,6 @@ footer a {
   text-decoration: none;
 }
 
-footer:hover a {
+footer:hover a:hover {
   color: hsl(300deg, 100%, 50%);
 }/*# sourceMappingURL=styles.css.map */
